@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Image and Price</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div class="head">
+      <div class="head_rec"></div>
+      <div class="head_name">Sleep Drift Repeat</div>
+      <div class="swiper Myswap">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(../sex_shop_img/jpg7.jpg);
+              background-position: center;
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(../sex_shop_img/jpg8.jpg);
+              background-position: center;
+            "
+          ></div>
+          <div
+            class="swiper-slide"
+            style="
+              background-image: url(../sex_shop_img/jpg9.jpg);
+              background-position: center;
+            "
+          ></div>
+        </div>
+      </div>
+    </div>
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-content">
+        <input type="file" id="imageInput" accept="image/*" />
+        <input type="text" id="priceInput" placeholder="Enter price" />
+        <button id="addItemButton">Add Item</button>
+        <button class="close-popup-btn">Close</button>
+      </div>
+    </div>
+
+    <div class="itemcon" id="itemsContainer">
+      <div class="open-col">
+        <button class="open-popup-btn">+</button>
+      </div>
+    </div>
+  </body>
+</html>
